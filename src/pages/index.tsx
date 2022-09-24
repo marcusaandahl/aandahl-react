@@ -43,6 +43,7 @@ const SeeWorkButton = styled.div`
   font-weight: 500;
   line-height: 10px;
   color: #F2F2F2;
+  cursor: pointer;
 `
 
 const ContactButton = styled.div`
@@ -60,6 +61,7 @@ const ContactButton = styled.div`
   font-weight: 500;
   line-height: 10px;
   color: #F2F2F2;
+  cursor: pointer;
 `
 
 const CTAButtons = styled.div`
