@@ -54,7 +54,7 @@ const OtherProjectsBox = styled.div`
     position: absolute;
     top: 10%;
     width: 100vw;
-    padding: 26px 0px;
+    padding: 26px 0;
     height: auto;
 `
 
