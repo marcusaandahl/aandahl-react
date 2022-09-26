@@ -7,14 +7,14 @@ interface IProps {
 
 export default function OtherProjectCardComponent({title, focused = false}: IProps) {
     return (
-        <OtherProjectCard>
-            <CardPic src="https://picsum.photos/800/800" />
+        <OtherProjectCard className='w-[200px] h-[120px] mm:w-[255px] mm:h-[130px] mb:w-[300px] mb:py-[10px] tb:w-[350px] tb:h-[170px] lt:w-[400px] ltl:w-[550px] ltl:h-[250px]'>
+            <CardPic src="https://picsum.photos/800/800" className='w-[70px] h-[120px] mm:w-[100px] mm:h-[130px] tb:w-[150px] tb:h-[170px] lt:w-[170px] ltl:w-[230px] ltl:h-[250px]' />
             <Content>
-                <Title>{title}</Title>
-                <Desc>Lorem ipsum dolor sit ametLorem ipsum dolor sit amet, consect etur adipiscing elit. Bibendum </Desc>
+                <Title className='text-[14px] mb:text-[17px] lt:text-[22px] ltl:text-[30px]'>{title}</Title>
+                <Desc className='text-[8px] leading-[10px] mb:text-[10px] lt:text-[12px] lt:leading-[12px] ltl:text-[19px] ltl:leading-[21px]'>Lorem ipsum dolor sit ametLorem ipsum dolor sit amet, consect etur adipiscing elit. Bibendum </Desc>
                 <Buttons>
-                    <ViewCode>View Code</ViewCode>
-                    <TryDemo>Try Demo</TryDemo>
+                    <ViewCode className='py-5% px-8% text-[6px] mb:text-[8px] lt:text-[12px] lt:py-6% ltl:text-[15px]'>View Code</ViewCode>
+                    <TryDemo className='py-5% px-8% text-[6px] mb:text-[8px] lt:text-[12px] lt:py-6% ltl:text-[15px]'>Try Demo</TryDemo>
                 </Buttons>
             </Content>
         </OtherProjectCard>
@@ -26,16 +26,15 @@ const TryDemo = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 4% 8%;
     gap: 10px;
     width: 100%;
+    height: 100%;
     height: fit-content;
     background: linear-gradient(88.3deg, #FF745B 1.65%, #E3398B 98.89%);
     border-radius: 8px;
 
     font-family: 'DM Sans';
     font-weight: 500;
-    font-size: 6px;
     line-height: 8px;
     color: #f2f2f2;
     white-space: nowrap;
@@ -47,16 +46,14 @@ const ViewCode = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 4% 8%;
     gap: 10px;
     width: 100%;
-    height: fit-content;
+    height: 100%;
     border: 1px solid #F2F2F2;
     border-radius: 8px;
 
     font-family: 'DM Sans';
     font-weight: 500;
-    font-size: 6px;
     line-height: 8px;
     color: #F2F2F2;
     white-space: nowrap;
@@ -73,7 +70,6 @@ const Buttons = styled.div`
 const Desc = styled.p`
     font-family: 'DM Sans';
     font-weight: 400;
-    font-size: 8px;
     line-height: 10px;
     color: rgba(242, 242, 242, 0.3);
 `
@@ -81,7 +77,6 @@ const Desc = styled.p`
 const Title = styled.h5`
     font-family: 'DM Sans';
     font-weight: 700;
-    font-size: 14px;
     line-height: 18px;
     color: #f2f2f2;
 `
@@ -99,7 +94,6 @@ const Content = styled.div`
 
 const CardPic = styled.img`
     object-fit: cover;
-    width: 100%;
     height: 100%;
     border-radius: 20px 0px 0px 20px;
 `
@@ -110,12 +104,6 @@ const OtherProjectCard = styled.div`
     align-items: center;
     padding: 0px 16px 0px 0px;
     gap: 16px;
-    width: fit-content;
-    height: 120px;
     background: radial-gradient(71% 292.81% at 92.2% 80.75%, #242424 0%, #23884E 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     border-radius: 20px;
-    @media only screen and (min-width: 1024px) {
-        width: 300px;
-        height: 180px;
-    }
 `

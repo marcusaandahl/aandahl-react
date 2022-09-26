@@ -22,10 +22,10 @@ export default function ProjectsPage({}) {
                 <OtherProjectsBox>
                     <div>
                         <Swiper
-                            spaceBetween={30}
+                            spaceBetween={20}
                             slidesPerView={'auto'}
                             modules={[Autoplay]}
-                            autoplay={false}
+                            autoplay={true}
                             centeredSlides={true}
                             grabCursor={true}
                             loop={true}
