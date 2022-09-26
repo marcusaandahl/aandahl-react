@@ -15,7 +15,8 @@ module.exports = {
         'mb': '425px',
         'tb': '768px',
         'lt': '1024px',
-        'ltl': '1440px'
+        'ltl': '1440px',
+        '4k': '2560px'
       },
       colors: {
         "gray1": "#171717",

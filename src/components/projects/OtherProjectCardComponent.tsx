@@ -38,6 +38,7 @@ const TryDemo = styled.div`
     line-height: 8px;
     color: #f2f2f2;
     white-space: nowrap;
+    cursor: pointer;
 `
 
 const ViewCode = styled.div`
@@ -57,6 +58,7 @@ const ViewCode = styled.div`
     line-height: 8px;
     color: #F2F2F2;
     white-space: nowrap;
+    cursor: pointer;
 `
 
 const Buttons = styled.div`

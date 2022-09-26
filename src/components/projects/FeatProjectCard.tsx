@@ -9,7 +9,7 @@ export default function FeatProjectCardComponent({align = "left", imgSrc}: IProp
     if (align === "right") {
         return (
             <FeatProjectCardRight className='h-[20vh] tb:h-[40vh]'>
-                <ImageRight src={imgSrc} className='w-[160px] h-[142.72px] tb:w-[340px] tb:h-[308.4px] lt:w-[400px] lt:h-[393.15px] right-[-30px] top-[-15px] tb:right-[-20px] tb:top-[-10px]'/>
+                <ImageRight src={imgSrc} className='w-[160px] h-[142.72px] tb:w-[340px] tb:h-[308.4px] lt:w-[400px] lt:h-[393.15px] right-[-40px] top-[-15px] tb:right-[-30px] tb:top-[-10px]'/>
                 <ContentRight>
                     <TextRight>
                         <Title className='text-[24px] tb:text-[40px]'>App Title</Title>
@@ -25,7 +25,7 @@ export default function FeatProjectCardComponent({align = "left", imgSrc}: IProp
     } else {
         return (
             <FeatProjectCardLeft className='h-[20vh] tb:h-[40vh]'>
-                <ImageLeft src={imgSrc} className='w-[160px] h-[142.72px] tb:w-[340px] tb:h-[308.4px] lt:w-[400px] lt:h-[393.15px] left-[-30px] top-[-15px] tb:left-[-20px] tb:top-[-10px]'/>
+                <ImageLeft src={imgSrc} className='w-[160px] h-[142.72px] tb:w-[340px] tb:h-[308.4px] lt:w-[400px] lt:h-[393.15px] left-[-40px] top-[-15px] tb:left-[-30px] tb:top-[-10px]'/>
                 <ContentLeft>
                     <TextLeft>
                         <Title className='text-[24px] tb:text-[40px]'>App Title</Title>
@@ -56,6 +56,7 @@ const TryDemo = styled.div`
     font-weight: 500;
     line-height: 8px;
     color: #FFFFFF;
+    cursor: pointer;
 `
 
 const ViewCode = styled.div`
@@ -74,6 +75,7 @@ const ViewCode = styled.div`
     font-weight: 500;
     line-height: 8px;
     color: #FFFFFF;
+    cursor: pointer;
 `
 
 const ButtonsLeft = styled.div`

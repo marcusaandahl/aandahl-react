@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import ExperiencePage from '../components/pages/ExperiencePage'
 import LandingPage from '../components/pages/LandingPage'
 import ProjectsPage from '../components/pages/ProjectsPage'
 import SideMenuComponent from '../components/SideMenuComponent'
@@ -9,6 +10,7 @@ export default function Home() {
       <SideMenuComponent />
       <LandingPage />
       <ProjectsPage />
+      <ExperiencePage />
     </ Main>
   )
 }

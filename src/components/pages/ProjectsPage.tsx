@@ -51,8 +51,6 @@ export default function ProjectsPage({}) {
 }
 
 const OtherProjectsBox = styled.div`
-    position: absolute;
-    top: 10%;
     width: 100vw;
     padding: 26px 0;
     height: auto;
@@ -66,7 +64,7 @@ const OtherProjectsContainer = styled.section`
     align-items: center;
     gap: 60px;
     width: 100vw;
-    min-height: 100vh;
+    padding: 32px 0;
 `
 
 const FeaturedProjects = styled.div`
@@ -102,7 +100,6 @@ const NotableProjectsContainer = styled.section`
     gap: 24px;
 
     width: 100%;
-    min-height: 100vh;
 
     flex: none;
     order: 1;
