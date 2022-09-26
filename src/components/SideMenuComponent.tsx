@@ -47,5 +47,6 @@ const Container = styled.div`
     justify-content: center;
     align-items: center;
 
-    border-radius: 0 32px 32px 0px
+    border-radius: 0 32px 32px 0px;
+    z-index: 10;
 `
