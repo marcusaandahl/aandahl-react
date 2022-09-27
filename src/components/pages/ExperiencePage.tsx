@@ -138,8 +138,7 @@ const ExperienceContainer = styled.section`
     justify-content: start;
     align-items: center;
     width: 100vw;
-    min-height: 100vh;
-    padding: 32px 0;
+    padding-top: 32px;
 `
 
 const Title = styled.div`
