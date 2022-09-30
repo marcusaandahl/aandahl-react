@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import ContactPage from '../components/pages/ContactPage'
 import ExperiencePage from '../components/pages/ExperiencePage'
 import LandingPage from '../components/pages/LandingPage'
 import LocationPage from '../components/pages/LocationPage'
@@ -14,7 +15,8 @@ export default function Home() {
       <ProjectsPage />
       <ExperiencePage />
       <TechnologiesPage />
-      <LocationPage />
+      {/* <LocationPage /> */}
+      <ContactPage />
     </ Main>
   )
 }
