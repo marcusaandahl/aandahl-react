@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components'
-import axios from 'axios'
 import { toast } from 'react-toastify';
+import axios from 'axios';
 
 export default function ContactPage({}) {
     const [email, setEmail] = useState("");
@@ -11,20 +11,10 @@ export default function ContactPage({}) {
     const onFormSubmit = (e: any) => {
         e.preventDefault()
         setSendingEmail(true)
-        axios.request({
-            method: 'POST',
-            url: 'https://fapimail.p.rapidapi.com/email/send',
-            headers: {
-              'content-type': 'application/json',
-              'X-RapidAPI-Key': process.env.EMAIL_API_KEY as string,
-              'X-RapidAPI-Host': process.env.EMAIL_API_HOST as string
-            },
-            data: {
-                "recipient": "marcus.aandahl@gmail.com",
-                "sender": email,
-                "subject": "Aandahl.dev Contact Email",
-                "message": message
-            }
+
+        axios.post('https://flourishing-brioche-3b8db7.netlify.app/.netlify/functions/sendMail', {
+            email: email,
+            message: message
         })
         .then(res => {
             toast("Email sent! Thank you for reaching out", {
@@ -33,7 +23,7 @@ export default function ContactPage({}) {
                 icon: "🚀",
                 className: "test"
             })
-        }).catch(function (error) {
+        }).catch(error => {
             toast("Error occured whilst sending email, try contacting another way", {
                 position: toast.POSITION.TOP_CENTER,
                 theme: "colored",
