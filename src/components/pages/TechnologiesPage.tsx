@@ -89,9 +89,9 @@ export default function TechnologiesPage({}) {
                 <SwiperSlide>
                     <ReactLogo className={logoClasses} width='auto' height='auto' />
                 </SwiperSlide>
-                <SwiperSlide>
+                {/* <SwiperSlide>
                     <TailwindCSS className={logoClasses} width='auto' height='auto' />
-                </SwiperSlide>
+                </SwiperSlide> */}
                 <SwiperSlide>
                     <TypeScript className={logoClasses} width='auto' height='auto' />
                 </SwiperSlide>

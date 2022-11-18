@@ -39,12 +39,12 @@ export default function ContactPage({}) {
     return (
         <>
             <ContactContainer className='px-[60px] tb:px-[80px]'>
-                <ContactCard>
+                <ContactCard className='h-[174px] tb:h-[300px] lt:max-w-[600px]'>
                     <SendMessageContainer onSubmit={onFormSubmit}>
-                        <SendMessageTitle>Send me a message</SendMessageTitle>
-                        <EmailInput placeholder='Email address' type="email" onChange={(e) => setEmail(e.target.value)} value={email} />
-                        <MessageInput placeholder='Your message' onChange={(e) => setMessage(e.target.value)} value={message}  />
-                        <SendMessageButton type="submit" disabled={sendingEmail} value={sendingEmail ? "Sending..." : "Send message"} />
+                        <SendMessageTitle className="text-[12px] tb:text-[18px]">Send me a message</SendMessageTitle>
+                        <EmailInput className="text-[8px] tb:text-[12px]" placeholder='Email address' type="email" onChange={(e) => setEmail(e.target.value)} value={email} />
+                        <MessageInput className="text-[8px] tb:text-[12px]" placeholder='Your message' onChange={(e) => setMessage(e.target.value)} value={message}  />
+                        <SendMessageButton className="text-[8px] tb:text-[12px]" type="submit" disabled={sendingEmail} value={sendingEmail ? "Sending..." : "Send message"} />
                     </SendMessageContainer>
                 </ContactCard>
             </ContactContainer>
@@ -66,7 +66,6 @@ const SendMessageButton = styled.input`
 
     font-family: 'DM Sans';
     font-style: normal;
-    font-size: 8px;
     color: #F2F2F2;
 `
 
@@ -86,7 +85,6 @@ const MessageInput = styled.textarea`
 
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: 8px;
     color: #F2F2F2;
 
     ::placeholder {
@@ -108,7 +106,6 @@ const EmailInput = styled.input`
 
     font-family: 'Poppins';
     font-weight: 400;
-    font-size: 8px;
     color: #F2F2F2;
 
     ::placeholder {
@@ -120,7 +117,6 @@ const EmailInput = styled.input`
 const SendMessageTitle = styled.h3`
     font-family: 'DM Sans';
     font-weight: 700;
-    font-size: 12px;
     color: #F2F2F2;
 `
 
@@ -143,7 +139,6 @@ const ContactCard = styled.div`
     padding: 16px;
     gap: 10px;
     width: 100%;
-    height: 174px;
     background: radial-gradient(71% 292.81% at 92.2% 80.75%, #7634AA 0%, #23884E 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
     border-radius: 30px;
 `
